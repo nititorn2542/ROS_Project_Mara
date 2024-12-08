@@ -1,0 +1,9 @@
+<launch>
+	<master auto="start"/>
+	<param name ="use_sim_time" value="false"/>
+	<node pkg="my_pkg" type="window1.py" name="window1" output="screen" />
+	<node pkg="my_pkg" type="window2.py" name="window2" output="screen" />
+	<node pkg="my_pkg" type="float_to_twist.py" name="float_to_twist" output="screen" />
+	<node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" output="screen" />
+	
+</launch> 
